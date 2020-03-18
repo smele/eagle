@@ -18415,18 +18415,18 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="B1" library="rectifier-IZ0VLL" deviceset="SKB" device="" package3d_urn="urn:adsk.eagle:package:23874/1"/>
+<part name="B1" library="rectifier-IZ0VLL" deviceset="SKB" device="" package3d_urn="urn:adsk.eagle:package:23874/1" value="5A"/>
 <part name="R1" library="rcl-IZ0VLL" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="680"/>
 <part name="R2" library="rcl-IZ0VLL" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4,7"/>
 <part name="R3" library="rcl-IZ0VLL" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100"/>
 <part name="R4" library="rcl-IZ0VLL" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
 <part name="R5" library="rcl-IZ0VLL" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1,5K"/>
-<part name="LED1" library="led-IZ0VLL" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
+<part name="LED1" library="led-IZ0VLL" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="RED 5MM"/>
 <part name="D1" library="diode-IZ0VLL" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="D2" library="diode-IZ0VLL" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
-<part name="IC1" library="v-reg" library_urn="urn:adsk.eagle:library:409" deviceset="79XXS" device="" package3d_urn="urn:adsk.eagle:package:30343/1"/>
+<part name="IC1" library="v-reg" library_urn="urn:adsk.eagle:library:409" deviceset="79XXS" device="" package3d_urn="urn:adsk.eagle:package:30343/1" value="7912"/>
 <part name="T1" library="triac" library_urn="urn:adsk.eagle:library:403" deviceset="TIC126" device="" package3d_urn="urn:adsk.eagle:package:30140/2" value="TAG 665-100"/>
-<part name="R6" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_EU-" device="PT10S" package3d_urn="urn:adsk.eagle:package:22711/1"/>
+<part name="R6" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="TRIM_EU-" device="PT10S" package3d_urn="urn:adsk.eagle:package:22711/1" value="1K"/>
 <part name="C1" library="rcl-IZ0VLL" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="1000uF 25VL"/>
 <part name="C2" library="rcl-IZ0VLL" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="2.2uF 25VL"/>
 <part name="D3" library="diode-IZ0VLL" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
