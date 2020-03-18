@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
@@ -66,6 +66,7 @@
 <wire x1="0" y1="60.95" x2="0" y2="0" width="0" layer="20"/>
 <text x="40.64" y="57.15" size="2.1844" layer="16" font="vector" ratio="15" rot="MR0">IZØVLL-CARBATT</text>
 <text x="13.97" y="55.88" size="2.54" layer="16" font="vector" ratio="15" rot="MR0">V.1</text>
+<text x="41.91" y="1.27" size="2" layer="16" rot="MR0">2020-03-18</text>
 </plain>
 <libraries>
 <library name="v-reg" urn="urn:adsk.eagle:library:409">
@@ -1935,10 +1936,10 @@ design rules under a new name.</description>
 <wire x1="41.91" y1="52.07" x2="46.99" y2="52.07" width="1.27" layer="16"/>
 <wire x1="30.48" y1="11.43" x2="26.67" y2="15.24" width="1.27" layer="16"/>
 <wire x1="25.4" y1="15.24" x2="26.67" y2="15.24" width="1.27" layer="16"/>
-<wire x1="30.48" y1="11.43" x2="30.48" y2="3.81" width="1.27" layer="16"/>
-<wire x1="30.48" y1="3.81" x2="31.75" y2="2.54" width="1.27" layer="16"/>
-<wire x1="31.75" y1="2.54" x2="39.37" y2="2.54" width="1.27" layer="16"/>
-<wire x1="39.37" y1="2.54" x2="48.819" y2="11.989" width="1.27" layer="16"/>
+<wire x1="30.48" y1="11.43" x2="30.48" y2="8.89" width="1.27" layer="16"/>
+<wire x1="30.48" y1="8.89" x2="33.02" y2="6.35" width="1.27" layer="16"/>
+<wire x1="33.02" y1="6.35" x2="43.18" y2="6.35" width="1.27" layer="16"/>
+<wire x1="43.18" y1="6.35" x2="48.819" y2="11.989" width="1.27" layer="16"/>
 <wire x1="48.819" y1="50.241" x2="46.99" y2="52.07" width="1.27" layer="16"/>
 <wire x1="48.819" y1="11.989" x2="48.819" y2="24.13" width="1.27" layer="16"/>
 <wire x1="48.819" y1="24.13" x2="48.819" y2="50.241" width="1.27" layer="16"/>
