@@ -18404,6 +18404,52 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="frames" urn="urn:adsk.eagle:library:229">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="A4L-LOC" urn="urn:adsk.eagle:symbol:13874/1" library_version="1">
+<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
+<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A4L-LOC" urn="urn:adsk.eagle:component:13926/1" prefix="FRAME" uservalue="yes" library_version="1">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A4, landscape with location and doc. field</description>
+<gates>
+<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18429,13 +18475,16 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="C1" library="rcl-IZ0VLL" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="1000uF 25VL"/>
 <part name="C2" library="rcl-IZ0VLL" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="2.2uF 25VL"/>
 <part name="D3" library="diode-IZ0VLL" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
-<part name="X1" library="con-phoenix-508-IZ0VLL" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
-<part name="X2" library="con-phoenix-508-IZ0VLL" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
-<part name="X3" library="con-phoenix-508-IZ0VLL" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="13.5VAC" library="con-phoenix-508-IZ0VLL" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="AMP" library="con-phoenix-508-IZ0VLL" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="BATT-VOLT" library="con-phoenix-508-IZ0VLL" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="129.54" y="-25.4" size="1.778" layer="97">Caricabatteria per auto.
+Progetto pubblicato su ARI Vigevano</text>
 </plain>
 <instances>
 <instance part="B1" gate="1" x="30.48" y="68.58" smashed="yes">
@@ -18498,26 +18547,31 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <attribute name="NAME" x="159.5374" y="45.72" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="162.3314" y="45.72" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X1" gate="-1" x="10.16" y="66.04" smashed="yes" rot="R180">
+<instance part="13.5VAC" gate="-1" x="10.16" y="66.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.604" y="66.675" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="10.16" y="71.12" smashed="yes" rot="R180">
+<instance part="13.5VAC" gate="-2" x="10.16" y="71.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.604" y="71.755" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="11.176" y="74.422" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X2" gate="-1" x="147.32" y="73.66" smashed="yes" rot="R90">
+<instance part="AMP" gate="-1" x="147.32" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="147.955" y="77.216" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X2" gate="-2" x="154.94" y="73.66" smashed="yes" rot="R90">
+<instance part="AMP" gate="-2" x="154.94" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="155.575" y="77.216" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="158.242" y="72.644" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X3" gate="-1" x="177.8" y="45.72" smashed="yes">
+<instance part="BATT-VOLT" gate="-1" x="177.8" y="45.72" smashed="yes">
 <attribute name="NAME" x="181.356" y="45.085" size="1.778" layer="95"/>
 </instance>
-<instance part="X3" gate="-2" x="177.8" y="40.64" smashed="yes">
+<instance part="BATT-VOLT" gate="-2" x="177.8" y="40.64" smashed="yes">
 <attribute name="NAME" x="181.356" y="40.005" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.784" y="37.338" size="1.778" layer="96"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="-35.56" y="-43.18" smashed="yes">
+<attribute name="DRAWING_NAME" x="181.61" y="-27.94" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="181.61" y="-33.02" size="2.286" layer="94"/>
+<attribute name="SHEET" x="194.945" y="-38.1" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -18600,7 +18654,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="160.02" y1="40.64" x2="160.02" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="17.78" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
 <junction x="142.24" y="17.78"/>
-<pinref part="X3" gate="-2" pin="KL"/>
+<pinref part="BATT-VOLT" gate="-2" pin="KL"/>
 <wire x1="175.26" y1="40.64" x2="175.26" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="17.78" x2="160.02" y2="17.78" width="0.1524" layer="91"/>
 <junction x="160.02" y="17.78"/>
@@ -18640,7 +18694,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <junction x="129.54" y="68.58"/>
 <wire x1="142.24" y1="68.58" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
 <junction x="142.24" y="68.58"/>
-<pinref part="X2" gate="-1" pin="KL"/>
+<pinref part="AMP" gate="-1" pin="KL"/>
 <wire x1="147.32" y1="68.58" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -18660,10 +18714,10 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <segment>
 <pinref part="D3" gate="1" pin="C"/>
 <wire x1="160.02" y1="45.72" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-2" pin="KL"/>
+<pinref part="AMP" gate="-2" pin="KL"/>
 <wire x1="154.94" y1="71.12" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-1" pin="KL"/>
+<pinref part="BATT-VOLT" gate="-1" pin="KL"/>
 <wire x1="175.26" y1="45.72" x2="175.26" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
 <junction x="160.02" y="68.58"/>
@@ -18671,7 +18725,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="X1" gate="-2" pin="KL"/>
+<pinref part="13.5VAC" gate="-2" pin="KL"/>
 <wire x1="12.7" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="71.12" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="B1" gate="1" pin="AC1"/>
@@ -18681,7 +18735,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="X1" gate="-1" pin="KL"/>
+<pinref part="13.5VAC" gate="-1" pin="KL"/>
 <wire x1="12.7" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="66.04" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
@@ -18695,6 +18749,10 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
